@@ -10,7 +10,7 @@ const reviewSchema = mongoose.Schema({
     versionKey:false
 })
 
-const ReviewModel = mongoose.connect("review",reviewSchema)
+const ReviewModel = mongoose.model("review",reviewSchema)
 
 module.exports ={
     ReviewModel
