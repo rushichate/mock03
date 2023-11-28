@@ -9,7 +9,7 @@ const movieSchema = mongoose.Schema({
     versionKey:false
 })
 
-const MovieModel = mongoose.connect("movie",movieSchema)
+const MovieModel = mongoose.model("movie",movieSchema)
 
 module.exports ={
    MovieModel
